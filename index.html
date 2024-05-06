@@ -39,10 +39,12 @@
 
   <script>
     function identificar() {
+      //Coleta o valor do input
       var num = document.getElementById('number').value;
-
+      //transforma o valor da variável "num" em número.
       var number = Number(num);
 
+      //Faz o calculo para identificar se o número é impar ou par.
       if(number % 2 == 0) {
         alert(`O número ${number} é Par.`)
         
