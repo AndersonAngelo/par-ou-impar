@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Par ou Impar</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      height: 90vh;
+      background: #173540;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      border: 1px solid #217373;
+      width: 40rem;
+      height: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 2rem;
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <h1>Identificador de par ou impar</h1>
+  
+    <input type="number" id="number" placeholder="Digite um número">
+    <button onclick="identificar()">Identificar</button>
+  </div>
+
+
+  <script>
+    function identificar() {
+      var num = document.getElementById('number').value;
+
+      var number = Number(num);
+
+      if(number % 2 == 0) {
+        alert(`O número ${number} é Par.`)
+        
+      } else {
+        alert(`O número ${number} é Impar.`)
+        
+      }
+    }
+  </script>
+</body>
+</html>
